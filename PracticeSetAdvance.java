@@ -2,14 +2,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashSet;
 
 
 public class PracticeSetAdvance {
     public static void main(String[] args) {
         // Question 1
-        ArrayList  ar = new ArrayList();
+        ArrayList<String>  ar = new ArrayList<>();
         ar.add("Student1");
         ar.add("Student2");
         ar.add("Student3");
@@ -24,8 +23,8 @@ public class PracticeSetAdvance {
             System.out.println(o);
         }
         // Question 2
-        Date d = new Date();
-        System.out.println(d.getHours()+ ":"+ d.getMinutes() +":"+d.getSeconds());
+        Calendar cal = Calendar.getInstance();
+        System.out.println(cal.get(Calendar.HOUR_OF_DAY) + ":" + cal.get(Calendar.MINUTE) + ":" + cal.get(Calendar.SECOND));
 
         // Question 3
         Calendar c = Calendar.getInstance();
